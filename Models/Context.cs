@@ -7,7 +7,7 @@ namespace Emploees.Models
     {
         public DbSet<Emploees> Emploees { get; set; } 
 
-        public Context()
+        public Context(DbContextOptions<Context> options):base(options) 
         {
             //Database.EnsureDeleted(); // удаляет БД 
             Database.EnsureCreated(); // создает БД
