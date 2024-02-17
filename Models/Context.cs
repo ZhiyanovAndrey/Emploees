@@ -5,7 +5,7 @@ namespace Emploees.Models
 {
     public class Context:DbContext
     {
-        public DbSet<Emploees> Emploees { get; set; } 
+        public DbSet<Staff> Emploees { get; set; } 
 
         public Context(DbContextOptions<Context> options):base(options) 
         {

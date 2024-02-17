@@ -1,6 +1,6 @@
 ﻿namespace Emploees.Models
 {
-    public class Emploees
+    public class Staff
     {
         public int Id { get; set; }
         public string SureName { get; set; }
@@ -10,7 +10,17 @@
         public DateTime EmploymentDate{ get; set; }
         public int Salary { get; set; }    
 
-            
+           public Staff(string sureName, string name, string thirdName, 
+               DateTime birfday, DateTime employmentDate, int salary)
+        {
+            SureName = sureName;
+            Name = name;
+            ThirdName = thirdName;
+            BirthDay = birfday;
+            EmploymentDate = employmentDate;
+            Salary = salary;
+
+        } 
 
         //- “Создание/удаление/редактирование сотрудника”
 
